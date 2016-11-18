@@ -32,8 +32,10 @@ SmallIN100
 Atomistics
 Dislocation
 SyntheticTest
+Data/Image
+Data/SmallIN100
 
-#Other files and folders Megna has in this folder
+#Other files and folders possibly in this folder
 DREAM3D_Short_Course_Metz
 Data2
 Data/statsfiles
