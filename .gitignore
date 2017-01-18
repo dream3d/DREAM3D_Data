@@ -20,6 +20,9 @@
 *.out
 *.app
 
+# Mac folder attributes
+.DS_Store
+
 Output
 Data/Output
 Data/12PercentTension
