@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd"[]>
+<Xdmf xmlns:xi="http://www.w3.org/2003/XInclude" Version="2.2">
+ <Domain>
+  <!-- *************** START OF DataContainer *************** -->
+  <Grid Name="DataContainer" GridType="Uniform">
+    <Topology TopologyType="3DCoRectMesh" Dimensions="101 81 61 "></Topology>
+    <Geometry Type="ORIGIN_DXDYDZ">
+      <!-- Origin  Z, Y, X -->
+      <DataItem Format="XML" Dimensions="3">0 0 0</DataItem>
+      <!-- DxDyDz (Spacing/Resolution) Z, Y, X -->
+      <DataItem Format="XML" Dimensions="3">1 1 1</DataItem>
+    </Geometry>
+    <Attribute Name="Data" AttributeType="Scalar" Center="Cell">
+      <DataItem Format="HDF" Dimensions="100 80 60 1" NumberType="Int" Precision="4" >
+        FindFeatureSizes_TestData.dream3d:/DataContainers/DataContainer/CellData/Data
+      </DataItem>
+    </Attribute>
+    <Attribute Name="FeatureIds" AttributeType="Scalar" Center="Cell">
+      <DataItem Format="HDF" Dimensions="100 80 60 1" NumberType="Int" Precision="4" >
+        FindFeatureSizes_TestData.dream3d:/DataContainers/DataContainer/CellData/FeatureIds
+      </DataItem>
+    </Attribute>
+  </Grid>
+  <!-- *************** END OF DataContainer *************** -->
+ </Domain>
+</Xdmf>
